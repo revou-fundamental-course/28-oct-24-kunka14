@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        
+        <!-- Form Input -->
+        <div class="form">
+            <label for="weight">Berat Badan (kg):</label>
+            <input type="number" id="weight" placeholder="Masukkan Berat Badan" required>
+
+            <label for="height">Tinggi Badan (m):</label>
+            <input type="number" id="height" step="0.01" placeholder="Masukkan Tinggi Badan" required>
+
+            <label for="gender">Jenis Kelamin:</label>
+            <select id="gender">
+                <option value="male">Laki-Laki</option>
+                <option value="female">Wanita</option>
+            </select>
+
+            <button id="calculate-btn">Hitung BMI</button>
+        </div>
+
+        <!-- BMI Result -->
+        <div id="result">
+            <h3>Hasil BMI:</h3>
+            <p id="bmi-result"></p>
+            <p id="bmi-category"></p>
+        </div>
+
+        <!-- Explanation -->
+        <div id="explanation">
+            <h3>Penjelasan BMI</h3>
+            <p>BMI (Body Mass Index) adalah ukuran yang digunakan untuk menentukan apakah berat badan seseorang proporsional terhadap tinggi badan.</p>
+            <p>Berikut adalah kategori BMI:</p>
+            <ul>
+                <li><strong>Underweight:</strong> BMI kurang dari 18.5</li>
+                <li><strong>Normal weight:</strong> BMI antara 18.5 dan 24.9</li>
+                <li><strong>Overweight:</strong> BMI antara 25 dan 29.9</li>
+                <li><strong>Obesity:</strong> BMI lebih dari 30</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
